@@ -1,0 +1,28 @@
+/* Resset básico */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: rgb(253, 255, 203);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px auto 250px 50px;
+  grid-template-rows: 100px auto 100px;
+
+  width: 500px;
+  height: 500px;
+  margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+  background-color: rgb(232, 170, 255);
+}
+
+.item {
+  background-color: rgb(173, 255, 169);
+}
