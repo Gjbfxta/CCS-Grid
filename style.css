@@ -14,12 +14,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 100px auto 250px 50px;
-  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 120px auto 200px 50px;
+  grid-template-rows: 120px auto 200px;
+  grid-template-columns: repeat(2, 1fr 3fr);
+  grid-template-rows: repeat(5, 1fr);
 
   width: 500px;
   height: 500px;
-  margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+  margin: 0 auto;
+  /* Centra elementoscon un ancho fijo en el contenedor */
   background-color: rgb(232, 170, 255);
 }
 
