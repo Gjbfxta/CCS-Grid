@@ -14,36 +14,37 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: repeat(3, 100px);
-  grid-template-areas:
-    "header  header  header"
-    "main    main    sidebar"
-    "footer  footer  footer";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px; /* define el espacio entre filas y columnas */
+  /* row-gap: 48px;define el espacio entre las filas */
+  /*column-gap: 12px;  define el espacio entre las columnas */
 
 
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  padding: 24px;
 
   background-color: rgb(232, 170, 255);
 }
-
-.header {
-  grid-area: header;
-  background-color: rgb(217, 141, 141);
+.item-1{
+background-color: rgb(85, 255, 0);
 }
 
-.main {
-  grid-area: main;
-  background-color: rgb(210, 237, 122);
+.item-2{
+  background-color: aqua;
+}
+.item-3{
+ background-color: rgb(106, 59, 125); 
+}
+.item-4{
+  background-color: rgb(255, 102, 0);
+}
+.item-5{
+  background-color: rgb(246, 255, 0);
+}
+.item-6{
+  background-color: rgb(204, 0, 255);
 }
 
-.sidebar {
-  grid-area: sidebar;
-  background-color: rgb(235, 201, 88);
-}
-.footer{
-  grid-area: footer;
-  background-color: rgb(143, 255, 154);
-}
